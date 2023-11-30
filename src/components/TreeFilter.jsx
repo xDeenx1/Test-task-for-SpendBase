@@ -27,7 +27,7 @@ const TreeFilter = (props) => {
   const [selected, setSelected] = React.useState([]);
   const [subjectData, setSubjectData] = React.useState();
   const [selectedSingleItem, setSelectedSingleItem] = React.useState("");
-  const [state, dispatch] = React.useReducer(reducer, userData);
+  const [state, dispatch] = React.useReducer(reducer, userData.data.results[0]);
 
   React.useEffect(() => {
     setSubjectData(() => state);
